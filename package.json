@@ -1,8 +1,8 @@
 {
-	"name": "wechat-snippet",
-	"description": "微信小程序代码辅助,代码片段自动完成",
-	"version": "0.4.10",
-	"publisher": "ChandZhang",
+	"name": "tarojs-snippet",
+	"description": "tarojs代码辅助,代码片段自动完成",
+	"version": "0.0.2",
+	"publisher": "fangkyi03",
 	"engines": {
 		"vscode": "^1.20.0"
 	},
@@ -12,62 +12,28 @@
 	"keywords": [
 		"miniapp",
 		"小程序",
-		"wx",
-		"wechat",
-		"wxapi"
+		"taro"
 	],
 	"contributes": {
 		"languages": [{
-				"id": "wxml",
+				"id": "javascript",
 				"extensions": [
-					".wxml"
-				]
-			},
-			{
-				"id": "json",
-				"extensions": [
-					".json"
-				]
-			},
-			{
-				"id": "wxs",
-				"extensions": [
-					".wxs"
+					".js"
 				]
 			}
 		],
 		"snippets": [{
 				"language": "javascript",
-				"path": "./snippets/wxjs.json"
-			},
-			{
-				"language": "typescript",
-				"path": "./snippets/wxjs.json"
-			},
-			{
-				"language": "wxs",
-				"path": "./snippets/wxjs.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/wxxml.json"
-			},
-			{
-				"language": "wxml",
-				"path": "./snippets/wxxml.json"
-			},
-			{
-				"language": "json",
-				"path": "./snippets/wxjson.json"
+				"path": "./snippets/index.json"
 			}
 		]
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Chand-zhang/wechat-snippet-vscode"
+		"url": "https://github.com/fangkyi03/taroTool.git"
 	},
 	"bugs": {
-		"email": "zhangcd@iiwol.com"
+		"email": "fangkyi02@live.cn"
 	},
 	"icon": "assets/image/logo.png",
 	"license": "MIT License"
