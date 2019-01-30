@@ -1,33 +1,21 @@
-import Taro from '@tarojs/taro'
-import { View } from '@tarojs/components'
-
-class ${1} extends Component {
-  render() {
-    return(
-      <View>
-        ${2}
-      </View>
-    )
-    }
-}
-
-export default My
 {
     "tarc": {
         "prefix": "tarc",
         "body": [
-            "import Taro from \"@tarojs/taro\"\n",
-            "import { View } from \"@tarojs/components\"\n",
-            "class ${1} extends Component {\n",
-            "\trender() {\n",
-            "\t    return(",
-            "\t<View>",
-            "\t${2}",
-            "\t</View>",
-            "\t    )",
-            "\t }",
-            "\t}",
+            "import Taro from '@tarojs/taro';",
+            "import { View, Text } from '@tarojs/components';",
+            "",
+            "export default class ${1:Test} extends Taro.Component {",
+            "  render() {",
+            "    return (",
+            "      <View>",
+            "        <Text> ${1:测试输入} </Text>",
+            "      </View>",
+            "    );",
+            "  }",
+            "}",
+            ""
         ],
-        "description": "创建taro模板"
+        "description": "taro页面模板"
     }
 }
